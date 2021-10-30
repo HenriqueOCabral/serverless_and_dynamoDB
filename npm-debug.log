@@ -1,0 +1,48 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/henriquec/.nvm/versions/node/v6.17.1/bin/node',
+1 verbose cli   '/home/henriquec/.nvm/versions/node/v6.17.1/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'invoke' ]
+2 info using npm@3.10.10
+3 info using node@v6.17.1
+4 verbose run-script [ 'preinvoke', 'invoke', 'postinvoke' ]
+5 info lifecycle trigger-dynamo@1.0.0~preinvoke: trigger-dynamo@1.0.0
+6 silly lifecycle trigger-dynamo@1.0.0~preinvoke: no script for preinvoke, continuing
+7 info lifecycle trigger-dynamo@1.0.0~invoke: trigger-dynamo@1.0.0
+8 verbose lifecycle trigger-dynamo@1.0.0~invoke: unsafe-perm in lifecycle true
+9 verbose lifecycle trigger-dynamo@1.0.0~invoke: PATH: /home/henriquec/.nvm/versions/node/v6.17.1/lib/node_modules/npm/bin/node-gyp-bin:/home/henriquec/Documents/DEV/Serverless AWS/demo-04-trigger-dynamodb/trigger-dynamo/node_modules/.bin:/home/henriquec/.nvm/versions/node/v6.17.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/games
+10 verbose lifecycle trigger-dynamo@1.0.0~invoke: CWD: /home/henriquec/Documents/DEV/Serverless AWS/demo-04-trigger-dynamodb/trigger-dynamo
+11 silly lifecycle trigger-dynamo@1.0.0~invoke: Args: [ '-c',
+11 silly lifecycle   'sls invoke  -f hero-insert --path requests-mock/hero.insert.json' ]
+12 info lifecycle trigger-dynamo@1.0.0~invoke: Failed to exec invoke script
+13 verbose stack Error: trigger-dynamo@1.0.0 invoke: `sls invoke  -f hero-insert --path requests-mock/hero.insert.json`
+13 verbose stack spawn ENOENT
+13 verbose stack     at ChildProcess.<anonymous> (/home/henriquec/.nvm/versions/node/v6.17.1/lib/node_modules/npm/lib/utils/spawn.js:33:16)
+13 verbose stack     at emitTwo (events.js:106:13)
+13 verbose stack     at ChildProcess.emit (events.js:191:7)
+13 verbose stack     at maybeClose (internal/child_process.js:920:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:230:5)
+14 verbose pkgid trigger-dynamo@1.0.0
+15 verbose cwd /home/henriquec/Documents/DEV/Serverless AWS/demo-04-trigger-dynamodb/trigger-dynamo
+16 error Linux 5.10.0-8-amd64
+17 error argv "/home/henriquec/.nvm/versions/node/v6.17.1/bin/node" "/home/henriquec/.nvm/versions/node/v6.17.1/bin/npm" "run" "invoke"
+18 error node v6.17.1
+19 error npm  v3.10.10
+20 error file sh
+21 error code ELIFECYCLE
+22 error errno ENOENT
+23 error syscall spawn
+24 error trigger-dynamo@1.0.0 invoke: `sls invoke  -f hero-insert --path requests-mock/hero.insert.json`
+24 error spawn ENOENT
+25 error Failed at the trigger-dynamo@1.0.0 invoke script 'sls invoke  -f hero-insert --path requests-mock/hero.insert.json'.
+25 error Make sure you have the latest version of node.js and npm installed.
+25 error If you do, this is most likely a problem with the trigger-dynamo package,
+25 error not with npm itself.
+25 error Tell the author that this fails on your system:
+25 error     sls invoke  -f hero-insert --path requests-mock/hero.insert.json
+25 error You can get information on how to open an issue for this project with:
+25 error     npm bugs trigger-dynamo
+25 error Or if that isn't available, you can get their info via:
+25 error     npm owner ls trigger-dynamo
+25 error There is likely additional logging output above.
+26 verbose exit [ 1, true ]
